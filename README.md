@@ -14,6 +14,7 @@ This project demonstrates how **SIEVE** works using **Bun** as the runtime and [
 * 🎯 **Improved hit rate** and **practical usability**
 
 Instead of using a *tail pointer* like LRU, **SIEVE** uses a **"hand" pointer** that walks through a **Key-Value Doubly Linked Queue** to decide which node to evict.
+
 You can read full paper here: 
 https://junchengyang.com/publication/nsdi24-SIEVE.pdf
 
