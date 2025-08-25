@@ -7,13 +7,15 @@ This project demonstrates how **SIEVE** works using **Bun** as the runtime and [
 
 ## 📖 What is SIEVE?
 
-**SIEVE** is a new cache algorithm created with the goal of being:
+**[SIEVE](https://junchengyang.com/publication/nsdi24-SIEVE.pdf)** is a new cache algorithm created with the goal of being:
 
 * ✅ **Simpler** than **LRU** (Least Recently Used)
 * 🚀 **Higher performing** and more scalable
 * 🎯 **Improved hit rate** and **practical usability**
 
 Instead of using a *tail pointer* like LRU, **SIEVE** uses a **"hand" pointer** that walks through a **Key-Value Doubly Linked Queue** to decide which node to evict.
+You can read full paper here: 
+https://junchengyang.com/publication/nsdi24-SIEVE.pdf
 
 ---
 
@@ -33,6 +35,14 @@ Each cache entry (node) has a `visited` flag (`0/1` or `false/true`):
    * The new node is added to the **head** of the queue.
 
 This mechanism makes SIEVE **faster, leaner, and fairer** compared to LRU.
+
+<img width="50%" src="https://cachemon.github.io/SIEVE-website/blog/assets/sieve/sieve_diagram_animation.gif" />
+<br>
+<img width="50%" src="https://cachemon.github.io/SIEVE-website/blog/assets/sieve/sieve-diagram.png" />
+<br>
+<img width="50%" src="https://cachemon.github.io/SIEVE-website/blog/assets/sieve/efficiency-large.png" />
+<br>
+<img width="50%" src="https://cachemon.github.io/SIEVE-website/blog/assets/sieve/sieve_queue_all_large.svg" />
 
 ---
 
