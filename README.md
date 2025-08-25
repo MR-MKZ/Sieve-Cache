@@ -37,13 +37,13 @@ Each cache entry (node) has a `visited` flag (`0/1` or `false/true`):
 
 This mechanism makes SIEVE **faster, leaner, and fairer** compared to LRU.
 
-<img width="50%" src="https://cachemon.github.io/SIEVE-website/blog/assets/sieve/sieve_diagram_animation.gif" />
+<img width="100%" src="https://cachemon.github.io/SIEVE-website/blog/assets/sieve/sieve_diagram_animation.gif" />
 <br>
-<img width="50%" src="https://cachemon.github.io/SIEVE-website/blog/assets/sieve/sieve-diagram.png" />
+<img width="100%" src="https://cachemon.github.io/SIEVE-website/blog/assets/sieve/sieve-diagram.png" />
 <br>
-<img width="50%" src="https://cachemon.github.io/SIEVE-website/blog/assets/sieve/efficiency-large.png" />
+<img width="100%" src="https://cachemon.github.io/SIEVE-website/blog/assets/sieve/efficiency-large.png" />
 <br>
-<img width="50%" src="https://cachemon.github.io/SIEVE-website/blog/assets/sieve/sieve_queue_all_large.svg" />
+<img width="100%" src="https://cachemon.github.io/SIEVE-website/blog/assets/sieve/sieve_queue_all_large.svg" />
 
 ---
 
